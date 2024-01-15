@@ -10,22 +10,24 @@
             color: #333333;
             position: relative;
             display: flex;
+            line-height: 1.5;
         }
+        
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
-            width: 200px; /* 可根据需要调整宽度 */
+            width: 150px; /* 可根据需要调整宽度 */
             height: 100%;
             overflow-y: auto;
-            background-color: #f0f0f0; /* 背景颜色 */
+            background-color: rgba(255, 255, 255, 0.5);
             padding: 20px;
         }
         
         .content {
-            margin-left: 200px; /* 确保内容部分不被侧边栏覆盖 */
+            margin-left: 150px; /* 确保内容部分不被侧边栏覆盖 */
             padding: 20px;
-            width: calc(100% - 200px); / 减去侧边栏宽度 */
+            width: calc(100% - 150px); / 减去侧边栏宽度 */
         }
         
         header {
@@ -57,8 +59,17 @@
         <ul>
             <li><a href="#Summary">Summary</a></li>
             <li><a href="#Skills">Skills</a></li>
+                <ul>
+                    <li><a href="#DCP">Data compilation & processing</a></li>
+                    <li><a href="#EM">Environmental modelling</a></li>
+                    <li><a href="#AW">Academic writing</a></li> 
+                </ul>
             <li><a href="#Education">Education</a></li>
-            <!-- 其他目录项 -->
+                <ul>
+                    <li><a href="#Bachelor">Bachelor of Engineering</a></li>
+                    <li><a href="#Master">Master of Engineering</a></li>
+                    <li><a href="#PhD">PhD candidate of Engineering</a></li> 
+                </ul>
         </ul>
     </div>
     
@@ -69,15 +80,6 @@
             <p>PhD candidate</p>
         </header>
         
-        <div class="sidebar">
-            <ul>
-                <li><a href="#Summary">Summary</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Education">Education</a></li>
-                <!-- 其他目录项 -->
-            </ul>
-        </div>
-        
         <section id="Summary">
             <h2>Summary</h2>
             <p>School of Environment, Harbin Institute of Technology. Majority is numerical simulation of emerging contaminants' environmental behaviors.</p>
@@ -85,37 +87,49 @@
         
         <section id="Skills">
             <h2>Skills</h2>
-            <h3>Data compilation & processing</h3>
-                <ul>
-                    <li>Know how to download big data from Internet databases well;</li>
-                    <li>Familiar with netCDF, GeoTIFF, SQL, and most kinds of data formats;</li>
-                    <li>Know advanced usage of Excel, SPSS, Origin, R, etc well.</li>
-                </ul>
-            <h3>Environmental modelling</h3>
-                <ul>
-                    <li>Master environmental fugacity modeling methods;</li>
-                    <li>Know well how to program with C, Python, etc.</li>
-                </ul>
-            <h3>Academic writing</h3>
-                <ul>
-                    <li>Have written several academic papers under the guidance of the supervisor.</li>
-                </ul>
+                <section id="DCP">
+                    <h3>Data compilation & processing</h3>
+                    <ul>
+                        <li>Know how to download big data from Internet databases well;</li>
+                        <li>Familiar with netCDF, GeoTIFF, SQL, and most kinds of data formats;</li>
+                        <li>Know advanced usage of Excel, SPSS, Origin, R, etc well.</li>
+                    </ul>
+                </section>
+                <section id="EM">
+                    <h3>Environmental modelling</h3>
+                    <ul>
+                        <li>Master environmental fugacity modeling methods;</li>
+                        <li>Know well how to program with C, Python, etc.</li>
+                    </ul>
+                </section>
+                <section id="AW">
+                    <h3>Academic writing</h3>
+                        <ul>
+                            <li>Have written several academic papers under the guidance of the supervisor.</li>
+                        </ul>
+                </section>
         </section>
     
         <section id="Education">
             <h2>Education</h2>
-            <h3>Bachelor of Engineering</h3>
-                <p>College of Architecture & Environment</p>
-                <p>Sichuan Univerisity</p>
-                <p>2015 - 2019</p>
-            <h3>Master of Engineering</h3>
-                <p>School of Environment</p>
-                <p>Harbin Institute of Technology</p>
-                <p>2019 - 2021</p>
-            <h3>PhD candidate of Engineering</h3>
-                <p>School of Environment</p>
-                <p>Harbin Institute of Technology</p>
-                <p>2021 -</p>
+                <section id="Bachelor">
+                    <h3>Bachelor of Engineering</h3>
+                        <p>College of Architecture & Environment</p>
+                        <p>Sichuan Univerisity</p>
+                        <p>2015 - 2019</p>
+                </section>
+                <section id="Master">
+                    <h3>Master of Engineering</h3>
+                        <p>School of Environment</p>
+                        <p>Harbin Institute of Technology</p>
+                        <p>2019 - 2021</p>
+                 </section>
+                <section id="PhD">
+                    <h3>PhD candidate of Engineering</h3>
+                        <p>School of Environment</p>
+                        <p>Harbin Institute of Technology</p>
+                        <p>2021 -</p>
+                 </section>
         </section>
     
         <footer>
