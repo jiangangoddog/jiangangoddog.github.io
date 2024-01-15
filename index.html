@@ -8,6 +8,17 @@
             background-image: url('indexelements/background.jpg'); /* Replace with your background image URL */
             background-size: cover;
             color: #333333;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7); /* Adjust the last number (0.7) to change transparency level */
+            z-index: -1;
         }
         header {
             text-align: center;
