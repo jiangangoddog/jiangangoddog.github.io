@@ -54,6 +54,24 @@
             line-height: 2;
             width: calc(100% - 250px); / 减去侧边栏宽度 */
         }
+        
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {float: left;}
+                .content {margin-left: 0;}
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
         .star-item {
             list-style-type: none; /* 移除默认的列表符号 */
         }
