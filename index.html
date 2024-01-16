@@ -37,6 +37,13 @@
             }
         }
         
+        .star-item::before {
+            content: "\2605"; /* Unicode字符代码 */
+            padding-right: 10px; /* 五角星和文本之间的间距 */
+            width: 1em; /* 确保星号和默认项目符号对齐 */
+            display: inline-block; /* 使宽度生效 */
+        }
+        
         .content {
             margin-left: 200px; /* 确保内容部分不被侧边栏覆盖 */
             padding: 20px;
@@ -161,11 +168,11 @@
                  </section>
         </section>
             <section id="Papers">
-            <h2>Skills</h2>
+            <h2>Papers</h2>
                 <section id="MB">
                     <h3>Mutilmedia Behavior</h3>
                     <ul>
-                        <li style="list-style-type: none;">&#9733; Know how to download big data from Internet databases well;</li>
+                        <li class="star-item">Know how to download big data from Internet databases well;</li>
                         <li>Familiar with netCDF, GeoTIFF, SQL, and most kinds of data formats;</li>
                         <li>Know advanced usage of Excel, SPSS, Origin, R, etc well.</li>
                     </ul>
