@@ -42,8 +42,9 @@
         .star-item::before {
             content: "\2605"; /* Unicode字符代码 */
             padding-right: 10px; /* 五角星和文本之间的间距 */
-            width: -1em; /* 确保星号和默认项目符号对齐 */
+            width: 1em; /* 确保星号和默认项目符号对齐 */
             display: inline-block; /* 使宽度生效 */
+            margin-left: -1em;
         }
         
         .content {
