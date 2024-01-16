@@ -13,15 +13,13 @@
         }
         
         .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
             position: fixed;
-            top: 20%;
-            bottom: 20%;
-            left: 0;
-            line-height: 2;
-            width: 250px; /* 可根据需要调整宽度 */
             height: 100%;
-            overflow-y: auto;
-            background-color: rgba(255, 255, 255, 0.5);
+            overflow: auto;
             ul {
                 padding: 0;
                 padding-left: 5px;
@@ -33,9 +31,28 @@
                 font-size: 12px;
                 list-style-type: none; 
             }
-            div {
-                padding-top: 30px;
-            }
+        }
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+         
+        .sidebar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        .content {
+            margin-left: 200px; /* 确保内容部分不被侧边栏覆盖 */
+            padding: 20px;
+            line-height: 2;
+            width: calc(100% - 200px); / 减去侧边栏宽度 */
         }
         .star-item {
             list-style-type: none; /* 移除默认的列表符号 */
@@ -46,13 +63,6 @@
             width: 0.5em; /* 确保星号和默认项目符号对齐 */
             display: inline-block; /* 使宽度生效 */
             margin-left: -1em;
-        }
-        
-        .content {
-            margin-left: 250px; /* 确保内容部分不被侧边栏覆盖 */
-            padding: 20px;
-            line-height: 2;
-            width: calc(100% - 250px); / 减去侧边栏宽度 */
         }
         
         header {
