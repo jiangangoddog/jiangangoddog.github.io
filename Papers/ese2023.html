@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文章详情</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-image {
+            width: 100%;
+            height: auto;
+        }
+        .article-content {
+            margin-top: 20px;
+        }
+        .download-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .download-links li {
+            margin-bottom: 10px;
+        }
+        .download-links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .download-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="article-image" src="article-image.jpg" alt="文章标题截图">
+
+        <div class="article-content">
+            <h1>文章标题</h1>
+            <p>这里是文章摘要...</p>
+            <p><a href="https://www.publisher-link.com">阅读全文</a></p>
+        </div>
+
+        <div class="download-links">
+            <h2>下载附件</h2>
+            <ul>
+                <li><a href="path/to/attachment1.pdf" download>附件1</a></li>
+                <li><a href="path/to/attachment2.pdf" download>附件2</a></li>
+                <!-- 更多附件链接 -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
