@@ -307,11 +307,16 @@
             top: 230px;
             right: 250px;
         }
-
-        /* 确保其他内容不会被覆盖 */
-        .content-container > *:not(.floating-svg-container) {
-            position: relative;
-            z-index: 1;
+        /* 移动设备隐藏SVG */
+        @media only screen and (max-width: 768px), (hover: none) {
+            .fixed-svg {
+                display: none !important;
+            }
+        }
+        
+        /* 备用类，用于JS检测 */
+        .hide-on-mobile {
+            display: none !important;
         }
     </style>
 </body>

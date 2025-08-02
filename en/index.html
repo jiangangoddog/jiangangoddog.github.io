@@ -311,6 +311,17 @@
             top: 230px;
             right: 250px;
         }
+        /* 移动设备隐藏SVG */
+        @media only screen and (max-width: 768px), (hover: none) {
+            .fixed-svg {
+                display: none !important;
+            }
+        }
+        
+        /* 备用类，用于JS检测 */
+        .hide-on-mobile {
+            display: none !important;
+        }
     </style>
 
 </body>
