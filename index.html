@@ -109,7 +109,20 @@
         }
     </style>
 </head>
+
+<script src="//res.zvo.cn/translate/translate.js"></script>
+<script>
+  // 隐藏默认控件 & 设置支持语言（可选）
+  translate.selectLanguageTag.show = false;
+  translate.selectLanguageTag.languages = 'zh-CN,en'; 
+  translate.execute(); // 初始化翻译
+</script>
+
 <body>
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+        <button onclick="translate.changeLanguage('zh-CN')">中文</button>
+        <button onclick="translate.changeLanguage('en')">English</button>
+    </div>
     <div class="sidebar">
         <ul>
             <li><a href="#Summary">Summary</a></li>
