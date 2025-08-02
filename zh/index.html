@@ -236,7 +236,7 @@
             </section>
             <section id="PGP">
                 <h3>SVOCs气粒分配</h3>
-                <p>颗粒-气体稳态分配模型（Li-Ma-Yang模型）的贡献者。在最近的研究中，将此稳态分配模式扩展到雨-气和雪-气的分配。</p>
+                <p>继承和完善了颗粒-气体稳态分配模型（Li-Ma-Yang模型）。在最近的研究中，将此稳态分配模式扩展到雨-气和雪-气的分配。</p>
                 <ul>
                     <li class="star-item"><b>Yang, P.-F.</b>; Ma, W.-L.; Zhang, Z.-F.; Liu, L.-Y.; Xiao, H.; Hansen, K. M.; Jia, H.-L.; Li, L.; Hu, P.-T.; Kallenborn, R.; Li, Y.-F. Phase Distribution, Deposition, and Precipitation Scavenging of Atmospheric Semivolatile Organic Compounds under Steady-State Partitioning Theory. Environ. Sci. Technol. 2025. <a href="../Papers/est2025/est2025.html">更多</a></li>
                     <li class="star-item"><b>Yang, P.-F.</b>; Ma, W.-L.; Xiao, H.; Hansen, K. M.; Wang, L.; Sun, J.-J.; Liu, L.-Y.; Zhang, Z.-F.; Jia, H.-L.; Li, Y.-F. Temperature Dependence of the Rain-Gas and Snow-Gas Partition Coefficients for Nearly a Thousand Chemicals. Chemosphere 2024, 142565.<a href="../Papers/chemosphere2024/chemosphere2024.html">更多</a></li>
@@ -260,7 +260,7 @@
         </footer>
      </div>
      
-    <div class="fixed-svg-container"">
+    <div class="fixed-svg-container">
         <img src="../indexelements/drone.svg" class="floating-svg svg1">
         <img src="../indexelements/camera.svg" class="floating-svg svg2">
         <img src="../indexelements/badminton.svg" class="floating-svg svg3">
@@ -309,11 +309,13 @@
         }
         /* 移动设备隐藏SVG */
         @media only screen and (max-width: 768px), (hover: none) {
-            .fixed-svg {
+            .fixed-svg-container {
+                display: none !important;
+            }
+            .floating-svg {
                 display: none !important;
             }
         }
-        
         /* 备用类，用于JS检测 */
         .hide-on-mobile {
             display: none !important;

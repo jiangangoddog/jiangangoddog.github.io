@@ -239,7 +239,7 @@
             </section>
             <section id="PGP">
                 <h3>SVOCs Particle-Gas Partition</h3>
-                <p>The contributor of the particle-gas steady-state partition model (Li-Ma-Yang model). 
+                <p>The inheritor and perfector of the particle-gas steady-state partition model (Li-Ma-Yang model). 
                     Have extended this steady-state partition pattern to the paritition of rain-gas and snow-gas in recent research.</p>
                 <ul>
                     <li class="star-item"><b>Yang, P.-F.</b>; Ma, W.-L.; Zhang, Z.-F.; Liu, L.-Y.; Xiao, H.; Hansen, K. M.; Jia, H.-L.; Li, L.; Hu, P.-T.; Kallenborn, R.; Li, Y.-F. Phase Distribution, Deposition, and Precipitation Scavenging of Atmospheric Semivolatile Organic Compounds under Steady-State Partitioning Theory. Environ. Sci. Technol. 2025. <a href="../Papers/est2025/est2025.html">more</a></li>
@@ -264,7 +264,7 @@
         </footer>
      </div>
 
-    <div class="fixed-svg-container"">
+    <div class="fixed-svg-container">
         <img src="../indexelements/drone.svg" class="floating-svg svg1">
         <img src="../indexelements/camera.svg" class="floating-svg svg2">
         <img src="../indexelements/badminton.svg" class="floating-svg svg3">
@@ -313,11 +313,13 @@
         }
         /* 移动设备隐藏SVG */
         @media only screen and (max-width: 768px), (hover: none) {
-            .fixed-svg {
+            .fixed-svg-container {
+                display: none !important;
+            }
+            .floating-svg {
                 display: none !important;
             }
         }
-        
         /* 备用类，用于JS检测 */
         .hide-on-mobile {
             display: none !important;
