@@ -1,0 +1,8 @@
+<script>
+  // 提取路径如 "/resume" -> "resume"
+  const path = window.location.pathname.split('/').pop(); 
+  const lang = localStorage.getItem('preferredLang') || 'zh';
+
+  // 跳转到语言目录下的对应页面
+  window.location.href = `/${lang}/${path || 'index.html'}`;
+</script>
