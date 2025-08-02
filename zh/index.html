@@ -259,5 +259,59 @@
             <p>E-mail: yang_pufei@163.com</p>
         </footer>
      </div>
+    <div class="fixed-svg-container"">
+        <img src="../indexelements/drone.svg" class="floating-svg svg1">
+        <img src="../indexelements/camera.svg" class="floating-svg svg2">
+        <img src="../indexelements/badminton.svg" class="floating-svg svg3">
+        <img src="../indexelements/code.svg" class="floating-svg svg4">
+    </div>
+
+    <style>
+        .svg-overlay {
+            position: fixed; /* 关键属性 */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none; /* 允许点击穿透 */
+            z-index: 1000; /* 确保在最上层 */
+            overflow: hidden; /* 防止内容溢出导致滚动条 */
+        }
+        
+        /* 基础SVG样式 */
+        .floating-svg {
+            position: absolute;
+            width: 10vw; /* 响应式尺寸 */
+            height: 10vw;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.3)); /* 可选阴影效果 */
+        }
+        
+        .svg1 {
+            top: 25vh;
+            left:22vw;
+        }
+        
+        .svg2 {
+            top: 5vh;
+            left: 30vw;
+        }
+
+        .svg3 {
+            top: 5vh;
+            left: 72vw;
+        }
+
+        .svg4 {
+            top: 25vh;
+            left: 80vw;
+        }
+
+        /* 确保其他内容不会被覆盖 */
+        .content-container > *:not(.floating-svg-container) {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </body>
 </html>
