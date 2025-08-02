@@ -286,36 +286,30 @@
         /* 基础SVG样式 */
         .floating-svg {
             position: absolute;
-            width: 10vw; /* 响应式尺寸 */
-            height: 10vw;
+            width: 100px; /* 响应式尺寸 */
+            height: 100px;
             object-fit: contain;
             filter: drop-shadow(0 0 5px rgba(0,0,0,0.3)); /* 可选阴影效果 */
         }
         
         .svg1 {
-            top: 25vh;
-            left:22vw;
+            top: 250px;
+            left: 400px;
         }
         
         .svg2 {
-            top: 5vh;
-            left: 30vw;
+            top: 50px;
+            left: 500px;
         }
 
         .svg3 {
-            top: 5vh;
-            left: 72vw;
+            top: 50px;
+            right: 300px;
         }
 
         .svg4 {
-            top: 25vh;
-            left: 80vw;
-        }
-
-        /* 确保其他内容不会被覆盖 */
-        .content-container > *:not(.floating-svg-container) {
-            position: relative;
-            z-index: 1;
+            top: 230px;
+            right: 250px;
         }
     </style>
 
